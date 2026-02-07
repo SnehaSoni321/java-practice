@@ -76,20 +76,43 @@ public class Strings {
         // 2. Input a string from the user create a new string called 'result' in which
         // you will replace the letter 'e' in the original string with letter 'i'.
 
+        // Scanner sc = new Scanner(System.in);
+        // String str = sc.next();
+
+        // String result = "";
+        // for(int i = 0; i<str.length(); i++) {
+        // if(str.charAt(i) == 'e') {
+        // result = result + 'i';
+        // } else {
+        // result = result + str.charAt(i);
+        // }
+
+        // }
+        // System.out.println(result);
+
+        // 3. input an email from the user. you have to create a username from the email
+        // by deleting the part that comes after '@'. Display that username to the user.
+
         Scanner sc = new Scanner(System.in);
-        String str = sc.next();
-        
-        String result = "";
-        for(int i = 0; i<str.length(); i++) {
-            if(str.charAt(i) == 'e') {
-                result = result + 'i';
-            } else {
-                result = result + str.charAt(i);
+        System.out.print("Enter your email: ");
+        String email = sc.next();
+
+        String userName = "";
+
+        if(!email.contains("@")) {
+            System.out.println("Invalid email '@' missing." );
+        } else {
+
+        for(int i = 0; i<email.length(); i++) {
+            if(email.charAt(i) == '@'){
+                break;
+            }else {
+                userName += email.charAt(i);
             }
-            
         }
-        System.out.println(result);
-        
+        System.out.println("Usrename: " + userName);
+    }
+
     }
 
 }
