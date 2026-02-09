@@ -52,12 +52,6 @@ public class BitManipulation {
             System.out.println(newNumber);
 
          }
-
-
-
-
-
-
     }
     
 }
