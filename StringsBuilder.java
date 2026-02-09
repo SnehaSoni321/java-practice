@@ -5,7 +5,7 @@ public class StringsBuilder {
         // //Declaration
         // StringBuilder sb = new StringBuilder("Tony");
         // System.out.println(sb);
-        
+
         // //use charAt
         // System.out.println(sb.charAt(0));
 
@@ -23,7 +23,7 @@ public class StringsBuilder {
         // sb.delete(2, 3);
         // System.out.println(sb);
 
-        //append funtion -> end mei kuch jodana
+        // append funtion -> end mei kuch jodana
         // StringBuilder sb = new StringBuilder("h");
         // sb.append("e");
         // sb.append("l");
@@ -31,49 +31,7 @@ public class StringsBuilder {
         // sb.append("o");
         // System.out.println(sb);
         // System.out.println(sb.length());
-
-        // 1. take an arry of strings input from the user and find the cumulative (combined) length of all those strings
-        // Scanner sc = new Scanner(System.in);
-        // System.out.println("Enter number of strings: ");
-        // int size = sc.nextInt();
-
-        // String array[] = new String[size];
-        // int toLength = 0;
-
-        // for(int i = 0; i<size; i++) {
-        //     array[i] = sc.next();
-        //     toLength += array[i].length();
-        // }
-        // System.out.println(toLength);
-
-                // or
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number of strings: ");
-        int n = sc.nextInt();
-        String[] arr = new String[n];
-        
-        sc.nextLine();
-
-        for(int i = 0; i<n; i++) {
-            System.out.print("Enter string " + (i+1) + ": ");
-            arr[i] = sc.nextLine();
-        }
-        int totalLength = 0;
-        for(int i = 0; i<n; i++) {
-            totalLength = totalLength + arr[i].length();
-        }
-
-        System.out.println("Total length of all strings = "+ totalLength);
-
-
-
-
-
-
-
+  
     }
 
-
-    
 }
