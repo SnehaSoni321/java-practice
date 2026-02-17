@@ -13,7 +13,7 @@ public class ArrayLinearSearch {
         
         // or
 
-        // find element present or not input for the user
+        // find element present or not. get input from to the user then print
         // Scanner sc = new Scanner(System.in);
         // System.out.println("Enter size of array: ");
         // int size = sc.nextInt();
@@ -64,8 +64,8 @@ public class ArrayLinearSearch {
         //  }
         //  System.out.println("Occurrence: "+count);
 
-        // 3. occurrence element no print double
-        int arr[] = {2,4,2,5,2,3};
+        // 3. duplicate element remove
+        int arr[] = {1,2,3,4,5,4,6,3};
 
         for(int i = 0; i<arr.length; i++) {
            boolean alreadyPrint = false;
@@ -80,12 +80,7 @@ public class ArrayLinearSearch {
             System.out.println(arr[i]);
            }
         }
-
-       
         
-       
-        
-
         //4. remove duplicate
 
         // int arr[] = {4,6,3,4,7,4};
