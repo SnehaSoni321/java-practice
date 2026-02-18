@@ -34,7 +34,6 @@ public class ArrayReverseArray {
         int arr[] = {1,2,1};
 
         // incorrect logic
-
        // int original = 0;
 
         // for(int i = 0; i<arr.length; i++) {
