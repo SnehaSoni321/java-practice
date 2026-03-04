@@ -5,6 +5,7 @@ public class Switch {
         Scanner sc = new Scanner(System.in);
         int button = sc.nextInt();
 
+        // without switch case
       /*   if(button==1) {
             System.out.println("Hello");
         }else if(button==2) {
@@ -16,6 +17,7 @@ public class Switch {
         }
             */
 
+        // with switch case
         switch (button) {
             case 1: System.out.println("Hello");
             break;
